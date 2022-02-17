@@ -13,6 +13,10 @@ body {
     font-style: normal;
 }
 
+@font-face {
+    src: url("assets/style/fonts.css");
+}
+
 html {
     font-family: 'HelveticaNeueCyr', sans-serif;
 }
