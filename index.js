@@ -32,3 +32,25 @@ function createCounter(){
 const counter1=createCounter()
 counter1()
 counter1()
+
+let spinStr = currItem=> {
+    if (currItem.length>=5){
+        return currItem.split('').reverse().join('')
+    }
+    else return currItem
+}
+
+function spinWords(word){
+    let result=[]
+    let listSplitWords= word.split(' ')
+    for (let currItem of listSplitWords){
+        result.push(spinStr(currItem))
+    }
+    return result.join(" ")
+}
+
+const result1 = spinWords("Привет из Legacy")
+console.log(result1)
+const result2=spinWords("This is a test")
+console.log(result2)
+
