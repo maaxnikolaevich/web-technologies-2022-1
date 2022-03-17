@@ -2,28 +2,31 @@
     font-size: 1rem;
 }
 
-.list-item__inner {
-    display: flex;
-    align-items: center;
-    gap: 1.5em;
-}
-.list-item_open > .list_item__items{
+.list-item_open > .list-item__items {
     display: block;
 }
 
-.list-item_open>.list-item__inner .list-item__arrow{
+.list-item_open > .list-item__inner .list-item__arrow {
     transform: rotate(180deg);
 }
-.list_item__items {
+
+.list-item__inner {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.list-item__items {
     padding-left: 1.5em;
     display: none;
 }
 
-.list-item__arrow{
+.list-item__arrow {
     width: 1.5em;
     height: 1.5em;
     cursor: pointer;
 }
-.list_item__folder{
-    width: 25px;
+
+.list-item__folder {
+    width: 1.5em;
 }

@@ -7,8 +7,11 @@ if (document.readyState==='loading'){
 }
 
 function init(){
-    const items=new ListItems(document.getElementById('list-items'),{});
-
+    const data={
+        
+    };
+    const items=new ListItems(document.getElementById('list-items'),data);
+    items.render();
 }
 
 
@@ -56,10 +59,5 @@ function init(){
 // ];
 //
 //
-// var html = listHtml(data);
 
-
-// var insert=document.getElementById("insert");
-//
-// insert.insertAdjacentHTML("beforebegin",html)
 

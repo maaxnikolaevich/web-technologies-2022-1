@@ -14,6 +14,19 @@ export default class ListItems{
             })
         }
     }
+    
+    render(){
+        this.el.insertAdjacentElement('beforeend',this.renderParent(this.data))
+    }
+    
+    renderParent(data){
+        
+    }
+    
+    renderChildren(data){
+        
+    }
+    
     toggleItems(parent){
         parent.classList.toggle('list-item_open');
     }
