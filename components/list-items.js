@@ -1,11 +1,10 @@
 export default class ListItems{
-    constructor(el,data) {
+    constructor(el) {
         this.el=el;
-        this.data=data;
         this.init();
     }
     init(){
-        this.render();
+        // this.render();
         const parents=this.el.querySelectorAll('[data-parent]')
         if ( parents.length !== 0){
             parents.forEach(parent => {
@@ -23,9 +22,11 @@ export default class ListItems{
     
     renderParent(data) {
         if (data.hasChildren){
-            let currentNode="<div class=\"list-item list-item_open\" data-parent>\n"+
+            let currentNode= "<div class=\"list-item list-item_open\"" +
+                " data-parent>\n"+
                 "<div class=\"list-item__inner\">\n"+
-                "<img class=\"list-item__arrow\" src=\"./assets/img/chevron-down.png\" alt=\"chevron-down\""+
+                "<img class=\"list-item__arrow\"" +
+                " src=\"../assets/img/chevron-down.png\" alt=\"chevron-down\""+
                 " data-open>\n" +"<img class=\"list-item__folder\"" +
                 " src=\"./assets/img/folder.png\" alt=\"folder\">\n"+"<span>"+data.name+"</span>"
                 +"</div>\n"+"<div class=\"list-item__items\">"
